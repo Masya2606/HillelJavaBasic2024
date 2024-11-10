@@ -9,5 +9,11 @@ public class CumulativeTotal {
             sum += i;
             System.out.println("Num is " + i + ", sum is " + sum );
         }
+
+
+        for (int j = 0; j <= 18; j++){
+            System.out.print("-");
+        }
+        System.out.println(" \nSum of numbers is " + sum );
     }
 }
