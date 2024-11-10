@@ -5,10 +5,14 @@ public class CumulativeTotal {
         int num = 6;
         int sum = 0;
 
+        System.out.println("\n   ***   for loop    ***   \n");
+
         for (int i = 1; i <= num; i++){
             sum += i;
             System.out.println("Num is " + i + ", sum is " + sum );
         }
+
+        System.out.println("\n   ***   while-loop    ***   \n");
 
         sum = 0; //overloading the variable
         int i = 1;
@@ -17,6 +21,8 @@ public class CumulativeTotal {
             System.out.println("Num is " + i + ", sum is " + sum);
             i++;
         }
+
+        System.out.println("\n   ***   do-while loop    ***   \n");
 
         sum = 0; //overloading the variable
         i = 1; //overloading the variable
