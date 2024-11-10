@@ -18,6 +18,13 @@ public class CumulativeTotal {
             i++;
         }
 
+        sum = 0; //overloading the variable
+        i = 1; //overloading the variable
+        do {
+            sum += i;
+            System.out.println("Num is " + i + ", sum is " + sum);
+            i++;
+        } while (num >= i);
 
         for (int j = 0; j <= 18; j++){
             System.out.print("-");
