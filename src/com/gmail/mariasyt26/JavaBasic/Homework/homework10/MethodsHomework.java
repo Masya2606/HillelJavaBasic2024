@@ -22,6 +22,11 @@ public class MethodsHomework {
         double height = scanner.nextDouble();
         System.out.println( "Об'єм циліндра радіусом " +  radius + " та висотою " + height + " дорівнює " + cylinderVolume(radius, height));
 
+
+        //Завдання 3
+
+        int [] intArray = new int [] { 10, 20, 30, 40, 50};
+        System.out.println("3. Масив чисел: [10, 20, 30, 40, 50] \nСума всіх елементів масиву дорівнює " + arraySum(intArray) );
     }
 
     public static int square ( int a ){
@@ -35,4 +40,13 @@ public class MethodsHomework {
     public static double cylinderVolume (double radius, double height){
         return Math.PI * square(radius) * height;
     }
+
+    public static int arraySum (int [] numbers ){
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++){
+            sum += numbers[i];
+        }
+        return sum;
+    }
+
 }
