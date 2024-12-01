@@ -36,6 +36,15 @@ public class MethodsHomework {
         String line = scannedLine.nextLine();
         System.out.println( "Рядок в зворотньому порядку: " + reverseString(line));
 
+        //Завдання 5
+
+        System.out.println("5. Введіть а: ");
+        int a  = scanner.nextInt();
+        System.out.println("Введіть b: ");
+        int b = scanner.nextInt();
+        System.out.println( "Результат " +  a + "^" + b + " дорівнює " + power(a,b));
+
+
     }
 
     public static int square ( int a ){
@@ -66,5 +75,12 @@ public class MethodsHomework {
             i--;
         } while ( i >= 0);
         return reversedString;
+    }
+
+    public static int power (int a, int b){
+        for (int i = 0; i <= b; i++){
+            a *= a;
+        }
+        return a;
     }
 }
