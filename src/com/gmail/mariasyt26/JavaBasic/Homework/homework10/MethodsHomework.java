@@ -27,6 +27,15 @@ public class MethodsHomework {
 
         int [] intArray = new int [] { 10, 20, 30, 40, 50};
         System.out.println("3. Масив чисел: [10, 20, 30, 40, 50] \nСума всіх елементів масиву дорівнює " + arraySum(intArray) );
+
+
+        //Завдання 4
+        //чому метод видає помилку, якщо не створювати новий об'єкт scanner?
+        System.out.println("4. Введіть рядок: ");
+        Scanner scannedLine = new Scanner(System.in);
+        String line = scannedLine.nextLine();
+        System.out.println( "Рядок в зворотньому порядку: " + reverseString(line));
+
     }
 
     public static int square ( int a ){
@@ -49,4 +58,13 @@ public class MethodsHomework {
         return sum;
     }
 
+    public static String reverseString(String string){
+        String reversedString = "";
+        int i = string.length() - 1;
+        do{
+            reversedString = reversedString + string.charAt(i);
+            i--;
+        } while ( i >= 0);
+        return reversedString;
+    }
 }
