@@ -39,8 +39,32 @@ public class Arrays {
         }
         System.out.println("Even Numbers " + countEvenNumbers);
         System.out.println("Odd Numbers " + countOddNumbers);
-
     }
 
+    public static void min (int [] someArray){
+        int min = someArray[0];
+        int minPosition = 0;
+        for (int i = 0; i < someArray.length; i++){
+            if (someArray[i] < min){
+                min = someArray[i];
+                minPosition = i;
+            }
+        }
+        System.out.println("Min " + min);
+        System.out.println("Min Position " + minPosition);
+    }
+
+    public static void max (int [] someArray){
+        int max = someArray[0];
+        int maxPosition = 0;
+        for (int i = 0; i < someArray.length; i++){
+            if (someArray[i] > max){
+                max = someArray[i];
+                maxPosition = i;
+            }
+        }
+        System.out.println("Max " + max);
+        System.out.println("Max Position " + maxPosition);
+    }
 }
 
