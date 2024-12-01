@@ -66,5 +66,25 @@ public class Arrays {
         System.out.println("Max " + max);
         System.out.println("Max Position " + maxPosition);
     }
+
+    public static void averageAfterNegative (int [] someArray) {
+        double sum = 0;
+        int count = 0;
+        for (int i = 0; i < someArray.length; i++) {
+            if (someArray[i] < 0) {
+                ++i;
+                for (int j = i; j < someArray.length; j++) {
+                    sum += someArray[j];
+                    count += 1;
+                }
+                break;
+            }
+        }
+        if (sum > 0) {
+            System.out.println(sum / count);
+        } else {
+            System.out.println("No negatives found");
+        }
+    }
 }
 
