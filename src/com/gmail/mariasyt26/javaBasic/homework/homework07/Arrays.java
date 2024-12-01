@@ -33,7 +33,7 @@ public class Arrays {
                 negativeSum += someArray[i];
             }
         }
-        System.out.println(negativeSum);
+        System.out.println("The sum of negatives in the given array equals " + negativeSum);
     }
 
     public static void oddNumbersCount (int [] someArray){
@@ -61,8 +61,8 @@ public class Arrays {
                 minPosition = i;
             }
         }
-        System.out.println("Min " + min);
-        System.out.println("Min Position " + minPosition);
+        System.out.println("Minimum of the array equals " + min);
+        System.out.println("Position of the minimum number: " + minPosition);
     }
 
     public static void max (int [] someArray){
@@ -74,8 +74,8 @@ public class Arrays {
                 maxPosition = i;
             }
         }
-        System.out.println("Max " + max);
-        System.out.println("Max Position " + maxPosition);
+        System.out.println("Maximum of the array equals " + max);
+        System.out.println("Position of the maximum number:  " + maxPosition);
     }
 
     public static void averageAfterNegative (int [] someArray) {
@@ -92,7 +92,7 @@ public class Arrays {
             }
         }
         if (sum > 0) {
-            System.out.println(sum / count);
+            System.out.println( "The average of all numbers after the first negative in the array equals " + sum / count);
         } else {
             System.out.println("No negatives found");
         }
