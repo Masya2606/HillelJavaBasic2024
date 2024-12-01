@@ -44,7 +44,13 @@ public class MethodsHomework {
         int b = scanner.nextInt();
         System.out.println( "Результат " +  a + "^" + b + " дорівнює " + power(a,b));
 
+        // Завдання 6
 
+        System.out.println("6. Введіть ціле число n: ");
+        int n  = scanner.nextInt();
+        System.out.println("Введіть текстовий рядок: ");
+        String text = scanner.nextLine();
+        stringMultiplicator(n, text);
     }
 
     public static int square ( int a ){
@@ -82,5 +88,11 @@ public class MethodsHomework {
             a *= a;
         }
         return a;
+    }
+
+    public static void stringMultiplicator ( int n, String text ){
+        for (int i = 1; i <= n; i++) {
+            System.out.println(text + "\n");
+        }
     }
 }
