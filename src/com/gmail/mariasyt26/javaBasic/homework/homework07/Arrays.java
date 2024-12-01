@@ -9,6 +9,17 @@ public class Arrays {
         for(int i = 0; i < array.length; i++){
             array[i] = ThreadLocalRandom.current().nextInt(-100, 100);
         }
+        print(array);
+        System.out.println();
+        sumNegatives(array);
+        System.out.println();
+        oddNumbersCount(array);
+        System.out.println();
+        min(array);
+        System.out.println();
+        max(array);
+        System.out.println();
+        averageAfterNegative(array);
     }
     public static void print(int[] someArray){
         for(int i = 0; i < someArray.length; i++){ //індексація починається з нуля, отже пятий елемент масива має індекс чотири, тому строга нерівність
