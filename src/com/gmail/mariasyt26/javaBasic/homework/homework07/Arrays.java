@@ -25,5 +25,22 @@ public class Arrays {
         System.out.println(negativeSum);
     }
 
+    public static void oddNumbersCount (int [] someArray){
+        int countEvenNumbers = 0;
+        int countOddNumbers = 0;
+
+        for(int i = 0; i < someArray.length; i++){
+            if (someArray[i] % 2 == 0) {
+                countEvenNumbers += 1;
+            }
+            else {
+                countOddNumbers += 1;
+            }
+        }
+        System.out.println("Even Numbers " + countEvenNumbers);
+        System.out.println("Odd Numbers " + countOddNumbers);
+
+    }
+
 }
 
