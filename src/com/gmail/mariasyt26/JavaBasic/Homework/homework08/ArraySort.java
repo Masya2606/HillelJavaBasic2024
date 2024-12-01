@@ -15,7 +15,7 @@ public class ArraySort {
         print(array);
 
         insertionSort(array);
-        System.out.print("Bідсортований масив: ");
+        System.out.print("\nBідсортований масив: ");
         print(array);
 
 
@@ -47,6 +47,8 @@ public class ArraySort {
         }
     }
 
+        //як можна змінити код, аби якщо число не знайдено, не друкувало -1?
+        //пробувала за допомогою void аби без return, а воно пише "can't resolve method" :((
         public static int binarySearch(int[] someArray, int searchedNumber){
             int left = 0;//індекс
             int right = someArray.length - 1;
