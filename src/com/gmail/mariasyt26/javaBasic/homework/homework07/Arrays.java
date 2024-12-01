@@ -15,5 +15,15 @@ public class Arrays {
             System.out.print(someArray[i] + "\t");
         }
     }
+    public static void sumNegatives (int [] someArray){
+        int negativeSum = 0;
+        for(int i = 0; i < someArray.length; i++){
+            if (someArray[i] < 0) {
+                negativeSum += someArray[i];
+            }
+        }
+        System.out.println(negativeSum);
+    }
+
 }
 
