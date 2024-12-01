@@ -1,5 +1,6 @@
 package com.gmail.mariasyt26.javaBasic.homework.homework08;
 
+import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ArraySort {
@@ -16,6 +17,12 @@ public class ArraySort {
         insertionSort(array);
         System.out.print("Bідсортований масив: ");
         print(array);
+
+
+        System.out.println("\nБудь ласка вкажіть число, яке Ви шукаєте: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.println(binarySearch(array, number));
 
 
     }
@@ -39,4 +46,23 @@ public class ArraySort {
             someArray[j + 1] = currentValue;
         }
     }
-}
+
+        public static int binarySearch(int[] someArray, int searchedNumber){
+            int left = 0;//індекс
+            int right = someArray.length - 1;
+            do{
+                int middle = (left + right)/2;
+                if (someArray[middle] > searchedNumber){ //якщо то шо ми шукаємо менше за мідл, то ми переміщуємося вліво
+                    right = middle -1 ; //-1 бо ми виключиємо мідл = звужуємо пошук бо число шо ми шукаємо не може бути мідл
+                } else if (someArray[middle] < searchedNumber) {
+                    left = middle + 1;
+                } else {
+                    System.out.println("Число, яке Ви шукали знаходиться в позиції: " + middle);
+                    return middle;
+                }
+
+            }while (left<=right);//поки ліва межа лівіша ніж права
+            System.out.println("Нажаль шукаємого числа в масиві не знайдено");
+            return -1; //нічого не знайдено
+        }
+    }
