@@ -14,6 +14,8 @@ public class Person {
 
     public void changeProfession(String newProfession){//можно ли передавать конкретные поля класса как параметры? нужно ли?
         this.profession = newProfession;
+        System.out.println("\nПісля оновлення професії");
+        describeYourself();
     }
 
     public void describeYourself (){

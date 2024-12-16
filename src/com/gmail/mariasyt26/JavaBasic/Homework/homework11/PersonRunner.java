@@ -9,5 +9,7 @@ public class PersonRunner {
         john.describeYourself();
         mary.describeYourself();
         bob.describeYourself();
+
+        mary.changeProfession("архітетор");
     }
 }
