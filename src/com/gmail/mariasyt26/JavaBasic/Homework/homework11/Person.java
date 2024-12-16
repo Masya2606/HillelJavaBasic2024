@@ -11,4 +11,8 @@ public class Person {
         this.age = age;
         this.profession = profession;
     }
+
+    public void changeProfession(Person person, String newProfession){//можно ли передавать конкретные поля класса как параметры? нужно ли?
+        this.profession = newProfession;
+    }
 }
