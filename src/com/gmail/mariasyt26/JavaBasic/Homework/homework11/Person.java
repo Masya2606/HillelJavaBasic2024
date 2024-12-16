@@ -12,7 +12,11 @@ public class Person {
         this.profession = profession;
     }
 
-    public void changeProfession(Person person, String newProfession){//можно ли передавать конкретные поля класса как параметры? нужно ли?
+    public void changeProfession(String newProfession){//можно ли передавать конкретные поля класса как параметры? нужно ли?
         this.profession = newProfession;
+    }
+
+    public void describeYourself (){
+        System.out.println("Iм'я: " + name + ", Вік: " + age + " Професія: " + profession );
     }
 }
