@@ -11,5 +11,7 @@ public class PersonRunner {
         bob.describeYourself();
 
         mary.changeProfession("архітетор");
+        System.out.println("\nПісля оновлення професії");
+        mary.describeYourself();
     }
 }
