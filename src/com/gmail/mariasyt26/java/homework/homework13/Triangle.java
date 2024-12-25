@@ -10,7 +10,7 @@ public class Triangle implements GeometricShape {
     }
 
     @Override
-    public void shapeArea() {
-        System.out.printf("The are of the triangle = %.2f", 0.5 * height * base);
+    public double shapeArea() {
+         return 0.5 * height * base;
     }
 }

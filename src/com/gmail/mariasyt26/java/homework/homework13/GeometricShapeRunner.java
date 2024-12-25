@@ -7,9 +7,11 @@ public class GeometricShapeRunner {
                 new Square(5),
                 new Triangle(10, 5)
         };
+
+        double sumArea = 0;
         for (GeometricShape shape : geometricShapes) {
-            shape.shapeArea();
-            System.out.println();
+            sumArea += shape.shapeArea();
         }
+        System.out.printf("Сумарна площа всіх фігур дорівнює: %.2f", sumArea);
     }
 }

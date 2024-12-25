@@ -8,7 +8,7 @@ public class Circle implements GeometricShape {
     }
 
     @Override
-    public void shapeArea() {
-        System.out.printf("The area of the circle with radius of " + radius + " cm = %.2f", Math.PI * Math.pow(radius, 2));
+    public double shapeArea() {
+        return Math.PI * Math.pow(radius, 2);
     }
 }

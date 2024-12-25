@@ -8,7 +8,7 @@ public class Square implements GeometricShape {
     }
 
     @Override
-    public void shapeArea() {
-        System.out.printf("The area of the square with the side" + side + " cm = %.2f", side * side);
+    public double shapeArea() {
+        return side * side;
     }
 }
